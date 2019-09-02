@@ -1,0 +1,26 @@
+{
+  "name": "stationf-server",
+  "version": "1.0.0",
+  "description": "Test StationF",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixferr/StationF-server.git"
+  },
+  "author": "FelixFerrant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felixferr/StationF-server/issues"
+  },
+  "homepage": "https://github.com/felixferr/StationF-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.11"
+  }
+}
