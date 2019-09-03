@@ -1,7 +1,8 @@
-{
-    "rooms":[
+ {
+    "rooms":   [
        {
           "name":"Salle #1",
+          "id":1,
           "description":"Salle #1",
           "capacity":5,
           "equipements":[
@@ -17,6 +18,7 @@
        },
        {
           "name":"Salle #2",
+          "id":2,
           "description":"Salle #2",
           "capacity":10,
           "equipements":[
@@ -29,6 +31,7 @@
        },
        {
           "name":"Salle Okjsdkso",
+          "id":3,
           "description":"Salle Okjsdkso",
           "capacity":11,
           "equipements":[],
@@ -37,6 +40,7 @@
        },
        {
           "name":"Salle de ouf",
+          "id":4,
           "description":"Salle de ouf",
           "capacity":10,
           "equipements":[
@@ -52,6 +56,7 @@
        },
        {
           "name":"Salle nulle",
+          "id":5,
           "description":"Salle nulle",
           "capacity":26,
           "equipements":[
@@ -66,4 +71,4 @@
           "updatedAt":"2016-12-09T16:45:49.096Z"
        }
     ]
- }
+   }
