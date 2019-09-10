@@ -10,6 +10,7 @@ router
 router
 .route('/:id')
 .get(roomsController.getRoom)
+.patch(roomsController.updateRoom)
 .delete(roomsController.deleteRoom);
 
 

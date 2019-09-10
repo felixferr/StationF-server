@@ -5,9 +5,14 @@ const cors = require('cors');
 const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
+const compression = require('compression');
+const bodyParser = require('body-parser');
 
 // Start express app
 const app = express();
+
+app.use(express.json());
+app.use(bodyParser.json());
 
 // Implement CORS
 app.use(cors());
@@ -32,7 +37,8 @@ app.use(mongoSanitize());
 
 // Data sanitization against XSS
 app.use(xss());
-
+// Compression
+app.use(compression());
 // ROUTES
 
 app.use('/api/v1/rooms', roomsRouter);

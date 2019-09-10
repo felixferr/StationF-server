@@ -18,7 +18,7 @@ exports.getRoom = catchAsync(async (req, res, next) => {
     JSON.stringify(room),
     err => {
       if (err) throw err;
-      console.log('The file has been saved!');
+      //console.log('The file has been saved!');
     }
   );
   if (!room) {
@@ -40,6 +40,21 @@ exports.deleteRoom = catchAsync(async (req, res, next) => {
     }
   });
   res.status(201).json(deleteRoom);
+});
+
+exports.updateRoom = catchAsync(async (req, res, next) => {
+  const room = await Rooms.findByIdAndUpdate(req.params.id, req.body);
+
+  if (!room) {
+    return next(new AppError('No room found with that ID', 404));
+  }
+
+  res.status(200).json({
+    status: 'success',
+    data: {
+      room
+    }
+  });
 });
 
 /*const rooms = JSON.parse(
